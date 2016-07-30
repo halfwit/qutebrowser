@@ -112,6 +112,16 @@ How do I use qutebrowser with mutt?::
     text/html; mv %s %s.html && qutebrowser %s.html >/dev/null 2>/dev/null; needsterminal;
 ----
 
+How do I set qutebrowser as the default?::
+    In your shell profile, .bash_profile or .zprofile, change your BROWSER variable:
+----
+    export BROWSER="qutebrowser"
+----
+    and change your xdg-open default:
+----
+    xdg-settings set default-web-browser qutebrowser
+----
+
 == Troubleshooting
 
 Configuration not saved after modifying config.::
